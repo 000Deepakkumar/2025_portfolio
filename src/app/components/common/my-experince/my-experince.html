@@ -1,0 +1,26 @@
+<div class="timeline-container" id="experience">
+  <h1 class="heading">
+    <span class="highlight" style="margin-right: 10px;">My</span> <span class="highlight-orange">Work Experince</span>
+  </h1>
+
+  <div class="timeline">
+    <div *ngFor="let exp of experiences; let i = index" class="timeline-item">
+      <div class="left">
+        <h3 style="text-align: end">{{ exp.company }}</h3>
+        <p style="text-align: end">{{ exp.duration }}</p>
+      </div>
+      <div class="dot-line" [ngStyle]="{ height: i === experiences.length - 1 ? '150px' : 'auto' }">
+        <div *ngIf="i !== 0" class="end-line"></div>
+
+        <div class="dot" [ngStyle]="{ 'background-color': exp.color }"></div>
+
+        <div *ngIf="i !== experiences.length - 1" class="line"></div>
+      </div>
+
+      <div class="right">
+        <h3>{{ exp.role }}</h3>
+        <p>{{ exp.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

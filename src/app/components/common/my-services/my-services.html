@@ -1,0 +1,34 @@
+<div class="service-container">
+  <div class="heading">
+    <h3>My <span>Expertise</span></h3>
+    <p>
+      Proficient Full Stack Developer with hands-on experience in designing, developing, and
+      deploying scalable web applications. Skilled in both frontend and backend technologies, with a
+      strong understanding of RESTful API development, database design, and modern DevOps practices.
+    </p>
+  </div>
+
+  <div class="service-card" #container>
+    <div class="glass-card" *ngFor="let item of pagedItems" >
+      <h3>{{ item.name }}</h3>
+      <div class="image-container">
+        <div class="card behind third"></div>
+        <div class="card behind second"></div>
+        <div class="card main">
+          <img [src]="item.image" alt="Web Design Sample" />
+        </div>
+      </div>
+      <a class="icon-overlay" [href]="item.link" target="_blank" rel="noopener noreferrer">
+        <span>&#8599;</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="pagination-dots">
+    <button
+      *ngFor="let page of [].constructor(totalPages); let i = index"
+      [class.active]="i === currentPage"
+      (click)="goToPage(i)"
+    ></button>
+  </div>
+</div>

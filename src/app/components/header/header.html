@@ -1,0 +1,106 @@
+<header class="navbar">
+  <a
+    class="nav-link active"
+    [ngClass]="{ active: activeSection === 'home' }"
+    (click)="scrollToSection('home')"
+    >Home</a
+  >
+  <a
+    class="nav-link"
+    [ngClass]="{ active: activeSection === 'service' }"
+    (click)="scrollToSection('service')"
+    >Service</a
+  >
+  <a
+    class="nav-link"
+    [ngClass]="{ active: activeSection === 'experience' }"
+    (click)="scrollToSection('experience')"
+    >Experience</a
+  >
+
+  <div class="logo-center t-none">
+    <div class="logo-circle">DK</div>
+    <div class="logo-text-wrapper">
+      <span class="logo-text">DevDK</span>
+      <div class="logo-hover-text">
+        <div class="line1">Made by</div>
+        <div class="line2">Deepak Kumar</div>
+      </div>
+    </div>
+  </div>
+
+  <a
+    class="nav-link"
+    [ngClass]="{ active: activeSection === 'resume' }"
+    (click)="scrollToSection('resume')"
+    >Resume</a
+  >
+  <a
+    class="nav-link"
+    [ngClass]="{ active: activeSection === 'project' }"
+    (click)="scrollToSection('project')"
+    >Project</a
+  >
+  <a
+    class="nav-link"
+    [ngClass]="{ active: activeSection === 'contact' }"
+    (click)="scrollToSection('contact')"
+    >Contact</a
+  >
+
+  <div>
+    <div class="mobile-header">
+      <div class="burger" (click)="toggleMenu()">&#9776;</div>
+
+      <div class="logo-center d-none">
+        <div class="logo-circle">DK</div>
+        <div class="logo-text-wrapper">
+          <span class="logo-text">DevDK</span>
+          <div class="logo-hover-text">
+            <div class="line1">Made by</div>
+            <div class="line2">Deepak Kumar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" [class.open]="menuOpen">
+      <a
+        class="nav-link"
+        [ngClass]="{ active: activeSection === 'home' }"
+        (click)="scrollToSection('home')"
+        >Home</a
+      >
+      <a
+        class="nav-link"
+        [ngClass]="{ active: activeSection === 'service' }"
+        (click)="scrollToSection('service')"
+        >Service</a
+      >
+      <a
+        class="nav-link"
+        [ngClass]="{ active: activeSection === 'experience' }"
+        (click)="scrollToSection('experience')"
+        >Experience</a
+      >
+      <a
+        class="nav-link"
+        [ngClass]="{ active: activeSection === 'resume' }"
+        (click)="scrollToSection('resume')"
+        >Resume</a
+      >
+      <a
+        class="nav-link"
+        [ngClass]="{ active: activeSection === 'project' }"
+        (click)="scrollToSection('project')"
+        >Project</a
+      >
+      <a
+        class="nav-link"
+        [ngClass]="{ active: activeSection === 'contact' }"
+        (click)="scrollToSection('contact')"
+        >Contact</a
+      >
+    </nav>
+  </div>
+</header>

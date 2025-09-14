@@ -1,0 +1,157 @@
+.hero-container,
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  gap: 40%;
+  width: 100%;
+  margin-top: 48px;
+  height: 272px;
+}
+
+.hero-container {
+  margin-top: 130px;
+}
+
+.intro {
+  position: relative;
+}
+
+.vector1 {
+  position: absolute;
+  top: -16px;
+  right: 38%;
+  width: 24px;
+  height: 24px;
+}
+.vector2 {
+  position: absolute;
+  bottom: -48px;
+  left: -13%;
+  width: 72px;
+  height: 72px;
+}
+
+.label {
+  width: min-content;
+  padding: 6px 24px;
+  border: 1px solid #171717;
+  border-radius: 50px;
+  font-size: medium;
+  margin-bottom: 10px;
+}
+.content {
+  text-align: center;
+  font-size: 64px;
+
+  span {
+    color: #fd853a;
+  }
+}
+
+.testimonial {
+  width: 270px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2d3a4b;
+  position: relative;
+  padding-left: 20px;
+}
+
+.quote-icon {
+  font-size: 24px;
+  color: #2d3a4b;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.testimonial strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.highlight {
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+
+.experience-card {
+  text-align: right;
+  font-family: 'Segoe UI', sans-serif;
+  width: 270px;
+}
+
+.stars {
+  color: #ff8c32;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.years {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.2;
+}
+
+.exp {
+  font-size: 14px;
+  color: #444;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+.profile {
+  position: absolute;
+  top: -37%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile img {
+  width: 495px;
+  height: 374px;
+  z-index: 2;
+}
+
+.semi-circle {
+  position: absolute;
+  bottom: 0;
+  width: 500px;
+  height: 250px;
+  background-color: #ff8c32;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  z-index: 1;
+}
+
+@media (max-width: 1051px) {
+  .hero-container {
+    margin-top: 50px;
+  }
+  .hero{
+    height: 350px;
+  }
+  .profile{
+    top: 0%;
+  }
+  .experience-card{
+    padding-right: 64px;
+  }
+  .testimonial{
+    margin-left: 64px;
+  }
+}

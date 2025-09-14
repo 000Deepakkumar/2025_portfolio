@@ -1,0 +1,167 @@
+.service-container {
+  width: 100%;
+  border-radius: 24px;
+  border: none;
+  z-index: 1000;
+  position: relative;
+  background-image: url('../../../../assets/Images/service-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+}
+
+.heading h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.heading span {
+  color: #fd853a;
+}
+
+.heading p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+.service-card {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.card-stack {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.behind {
+  background: #ccc;
+}
+
+.third {
+  bottom: 51%;
+  z-index: 1;
+  opacity: 0.3;
+  width: 85%;
+}
+
+.second {
+  bottom: 48%;
+  z-index: 2;
+  opacity: 1;
+  width: 95%;
+}
+
+.main {
+  bottom: 45%;
+  z-index: 3;
+  background: #ffffff00;
+}
+
+.glass-card {
+  width: 416px;
+  height: 508px;
+  background: rgb(197 194 194 / 28%);
+  backdrop-filter: blur(4px);
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.glass-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+  padding: 14px 32px 32px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.icon-overlay {
+  position: absolute;
+  z-index: 10;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1d2939;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-overlay:hover {
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  background-color: #1e1e1e;
+}
+.pagination-dots {
+  display: flex;
+  gap: 10px;
+  padding: 20px 20px 40px 20px;
+  justify-content: center;
+}
+
+.pagination-dots button {
+  width: 20px;
+  height: 6px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-dots button.active {
+  background-color: orange;
+}

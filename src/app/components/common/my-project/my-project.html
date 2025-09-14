@@ -1,0 +1,44 @@
+<div class="portfolio-container">
+  <div class="title">
+    <h2>
+      Lets have a look at <br />
+      my <span class="highlight">Portfolio</span>
+    </h2>
+    <button class="see-all-btn">See All</button>
+  </div>
+
+  <div class="cards-wrapper">
+    <div class="card" *ngFor="let card of paginatedCards">
+      <button class="ref-btn" (click)="goTo(card.link)">
+        <i class="ri-arrow-right-line"></i>
+      </button>
+      <img [src]="card.image" alt="Portfolio Image" (click)="setActiveCard(card)"/>
+      <h3 class="card-title">{{ card.title }}</h3>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <span
+      *ngFor="let dot of dots; let i = index"
+      class="dot"
+      [class.active]="i === activeDot"
+      (click)="setActiveDot(i)"
+    >
+    </span>
+  </div>
+
+  <div class="tags">
+    <button *ngFor="let tag of tags" class="tag-btn">{{ tag }}</button>
+  </div>
+
+  <div class="description-section">
+    <h2 class="description-title">
+      {{activeCard.title}}<button class="desc-btn">
+        <i class="ri-arrow-right-line"></i>
+      </button>
+    </h2>
+    <p class="description-text">
+      {{activeCard.description}}
+    </p>
+  </div>
+</div>
